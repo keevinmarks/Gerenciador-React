@@ -24,7 +24,7 @@ const validateUser = async ({name, password}: User) => {
                 path: "/",
                 maxAge: 60 * 60 * 3
             });
-            redirect("/system/users");
+            redirect("/system/computers");
         }else{
             return {message: jsonResp.message, success: false}
         }
